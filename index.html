@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="startTime()">
+    <div class="weather-app">
+        <div class="container">
+            <h1 class="header">Weather Report</h1>
+            <div id="txt"></div>
+            <!-- temp  -->
+            <div>
+                <p id="temperature">12°</p>
+                <div class="city-name">
+                    <h2 id="city">Delhi,IN</h2>
+                </div>
+                <div class="temp-box">
+                    <img src="icons/116.png" id="img" alt="" width="50" height="50">
+                    <span id="clouds">clear sky</span>
+                </div>
+            </div>
+            <div>
+                <div class="details">
+                    <li class="hum">
+                        <span>Humidity :</span>
+                        <span class="humidity">91%</span>
+                    </li>
+                    <li class="win">
+                        <span>Wind Speed :</span>
+                        <span class="wind">5.66km/h</span>
+                    </li>
+                    <li class="pre">
+                        <span>Pressure :</span>
+                        <span class="pressure">1002hPa</span>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- panel -->
+
+        <div class="panel">
+            <!-- search -->
+            <div id="locationInput">
+                <input type="text" name="" id="input" placeholder="Search Location...">
+                <button type="submit" id="search" onclick="searchByCity()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+
+            <!-- upcomig forecast -->
+            <div class="forecstH">
+                <h3 class="cast-header">Upcoming forecast</h3>
+                <div class="templist">
+                    <div class="next">
+                        <div>
+                            <p class="time"></p>
+                            <p>14 °C / 9 °C</p>
+                        </div>
+                        <p class="desc">clouds</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time"></p>
+                            <p>12 °C / 6 °C</p>
+                        </div>
+                        <p class="desc">light rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time"></p>
+                            <p>12 °C / 7 °C</p>
+                        </div>
+                        <p class="desc">light rain</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time"></p>
+                            <p>15 °C / 10 °C</p>
+                        </div>
+                        <p class="desc">clouds</p>
+                    </div>
+                    <div class="next">
+                        <div>
+                            <p class="time"></p>
+                            <p>16 °C / 12 °C</p>
+                        </div>
+                        <p class="desc">few clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other days forecast -->
+
+    <div class="forecstD">
+        <h3 class="cast-header"> Other's days forecast</h3>
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date"></p>
+                <p>14 °C / 9 °C</p>
+                <p class="desc">clouds</p>
+            </div>
+            <div class="dayF">
+                <p class="date"></p>
+                <p>13 °C / 8 °C</p>
+                <p class="desc">light rain</p>
+            </div>
+            <div class="dayF">
+                <p class="date"></p>
+                <p>10 °C / 6 °C</p>
+                <p class="desc">light rain</p>
+            </div>
+            <div class="dayF">
+                <p class="date"></p>
+                <p>15 °C / 9 °C</p>
+                <p class="desc">clouds</p>
+            </div>
+            <div class="dayF">
+                <p class="date"></p>
+                <p>21 °C / 16 °C</p>
+                <p class="desc">few clouds</p>
+            </div>
+            <div class="dayF">
+                <p class="date"></p>
+                <p>27 °C / 22 °C</p>
+                <p class="desc">clear sky</p>
+            </div>
+        </div>
+        <div class="dev">Devloped by - Mehnawaz Ansari</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
